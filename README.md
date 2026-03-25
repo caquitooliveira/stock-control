@@ -50,6 +50,7 @@ yarn dev
 Servidor rodando em:
 
 http://localhost:3000
+
 Frontend
 cd stock-control
 npm install
@@ -58,15 +59,11 @@ ng s --o
 Aplicação aberta em:
 
 http://localhost:4200
+
 🔐 Autenticação
 Sistema protegido com JWT
 Token é salvo no navegador após login
-Token é enviado automaticamente nas requisições protegidas
-📌 Melhorias Futuras
-Dashboard com métricas avançadas
-Sistema de permissões (admin/user)
-Upload de imagens de produtos
-Otimizações de performance no frontend e backend
+
 👨‍💻 Autor
 
 Caio Oliveira
