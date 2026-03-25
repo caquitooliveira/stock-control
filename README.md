@@ -1,27 +1,72 @@
-# StockControl
+# 📦 Sistema de Controle de Estoque
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+![Angular](https://img.shields.io/badge/Angular-15-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-18-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![PrimeNG](https://img.shields.io/badge/PrimeNG-15-007ad9?style=for-the-badge&logo=primeng&logoColor=white)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Aplicação de controle de estoque desenvolvida com **Angular (frontend)** e **Node.js + Express + Prisma (backend)**.  
+Permite gerenciar produtos, categorias e vendas, com dashboard em tempo real mostrando gráficos de desempenho.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Funcionalidades Principais
 
-## Build
+- 🔐 Autenticação de usuários (login e cadastro)  
+- 📦 Cadastro, edição e exclusão de produtos  
+- 💰 Registro de vendas e controle de estoque  
+- 📊 Dashboard com gráficos dinâmicos por produto/categoria  
+- 📂 Gerenciamento de categorias  
+- 🔒 Rotas protegidas com JWT  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 🛠 Tecnologias Utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Frontend
+- Angular 15  
+- TypeScript  
+- PrimeNG & PrimeFlex   
+- RxJS   
 
-## Running end-to-end tests
+### Backend
+- Node.js + Express  
+- Prisma ORM  
+- JWT (autenticação)  
+ 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## ⚙️ Como Rodar o Projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Backend
+
+```bash
+cd stock-api
+yarn install
+yarn dev
+
+Servidor rodando em:
+
+http://localhost:3000
+Frontend
+cd stock-control
+npm install
+ng s --o
+
+Aplicação aberta em:
+
+http://localhost:4200
+🔐 Autenticação
+Sistema protegido com JWT
+Token é salvo no navegador após login
+Token é enviado automaticamente nas requisições protegidas
+📌 Melhorias Futuras
+Dashboard com métricas avançadas
+Sistema de permissões (admin/user)
+Upload de imagens de produtos
+Otimizações de performance no frontend e backend
+👨‍💻 Autor
+
+Caio Oliveira
