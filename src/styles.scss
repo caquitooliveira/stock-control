@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Remoção de estilos padrões do input search */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* Estilização básica do textarea */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* Margem personalizada */
+.mt-10 {
+  margin-top: 30vh;
+}
+
+/* Estilos da rota exata */
+.exact_route button {
+  background-color: #6372c3 !important;
+}
+
+/* Dropdown (Angular + PrimeNG) */
+:host ::ng-deep .p-dropdown {
+  width: 50%;
+}

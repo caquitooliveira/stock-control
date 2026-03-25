@@ -1,0 +1,91 @@
+<div class="grid">
+  <div class="col-12">
+    <div class="flex justify-center items-center m-auto">
+
+      <!-- LOGIN -->
+      <p-card
+        styleClass="mt-10"
+        header="Login"
+        subheader="Faça login para acessar o sistema!"
+        *ngIf="loginCard"
+      >
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmitLoginForm()">
+
+          <div class="flex justify-content-center flex-column gap-2">
+
+            <input
+            #emailInput
+              type="email"
+              pInputText
+              placeholder="Email"
+              formControlName="email" />
+
+            <input
+            #inputPassword
+              type="password"
+              pInputText
+              placeholder="Senha"
+              formControlName="password" />
+
+          </div>
+
+          <div class="flex justify-content-center mt-3">
+            <button
+              type="submit"
+              [disabled]="!loginForm.valid"
+              pButton
+              label="Login">
+            </button>
+          </div>
+
+        </form>
+
+        <div
+          class="flex justify-content-center mt-3 p-link-toggle"
+          (click)="loginCard = false"
+        >
+          Criar Conta
+        </div>
+
+      </p-card>
+
+      <!-- SIGNUP -->
+      <p-card
+        class="card-wrapper"
+        header="Criar Conta"
+        subheader="Crie já sua conta gratuita!"
+        *ngIf="!loginCard"
+      >
+
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmitSignUpForm()">
+
+          <input type="text" pInputText placeholder="Nome" formControlName="name" />
+
+          <input type="email" pInputText placeholder="Email" formControlName="email" />
+
+          <input type="password" pInputText placeholder="Senha" formControlName="password" />
+
+          <div class="flex justify-content-center mt-3">
+            <button
+              type="submit"
+              pButton
+              label="Criar conta"
+              class="p-button-danger">
+            </button>
+          </div>
+
+        </form>
+
+        <div
+          class="flex justify-content-center mt-3 p-link-toggle"
+          (click)="loginCard = true"
+        >
+          Fazer Login
+        </div>
+
+      </p-card>
+
+    </div>
+  </div>
+</div>
